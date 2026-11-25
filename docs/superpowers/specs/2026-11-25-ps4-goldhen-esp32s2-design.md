@@ -106,13 +106,15 @@ Afterglow depende disso para rodar offline).
 nvs,      data, nvs,     0x9000,   0x4000
 phy_init, data, phy,     0xd000,   0x1000
 factory,  app,  factory, 0x10000,  0x180000
-littlefs, data, spiffs,  0x190000, 0x270000
+spiffs,   data, spiffs,  0x190000, 0x270000
 ```
 
 - App: 1,5 MB (0x10000–0x190000).
 - LittleFS: ~2,44 MB (0x190000–0x400000).
 - Conteúdo embutido usa ~1,1 MB (incluindo `hen.bin` e `goldhen.bin`), com
   folga.
+- A partição de dados chama-se `spiffs` para casar com o label padrão do
+  `LittleFS.begin()`.
 
 ### Configuração
 

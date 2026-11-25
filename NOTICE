@@ -1,0 +1,9 @@
+Este projeto embute o afterglow-web (https://github.com/well0nez/afterglow-web),
+licenciado sob AGPL-3.0 (LICENSE). O host deriva de:
+  - raw13g (jb.js, ps4_offsets.js, scaffolding) — MIT (LICENSE-raw13g)
+  - jordyidk/slopkit (core.js, mem.js, int64.js) — ver TECHNICAL.md upstream
+  - SiSTRo/GoldHEN (goldhen.bin v2.4b18.14) — conforme permissao do upstream
+O formato do instalador foi inspirado no esp32s2FULLinstaller de ps4macedo.
+
+O firmware, scripts e documentacao deste repositorio sao distribuidos sob
+AGPL-3.0.

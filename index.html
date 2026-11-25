@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS4 14.00 — GoldHEN 2.4b18.14 (ESP32-S2)</title>
+<script type="module" src="https://unpkg.com/esp-web-tools@8.0.6/dist/web/install-button.js?module"></script>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 14px; padding: 32px 18px;
+    background: radial-gradient(circle at 50% 0%, #1a0d0d, #05070d 70%);
+    color: #e6ebf2; font-family: system-ui, -apple-system, sans-serif; text-align: center;
+  }
+  h1 { margin: 0; font-size: clamp(22px, 4vw, 40px); color: #fff; text-shadow: 2px 2px #ff5757; }
+  .sub { margin: 0; color: #ff9a9a; font-weight: 700; letter-spacing: .04em; }
+  esp-web-install-button button {
+    margin-top: 12px; padding: 14px 34px; font: 700 20px/1 system-ui, sans-serif;
+    text-transform: uppercase; color: #fff; cursor: pointer;
+    background: #b31b2b; border: 2px solid #ff5757; border-radius: 6px;
+    box-shadow: 0 5px 0 #5c0d15;
+  }
+  esp-web-install-button button:hover { background: #d62436; }
+  esp-web-install-button button:active { transform: translateY(4px); box-shadow: none; }
+  .hint { max-width: 560px; color: #c8ced8; line-height: 1.5; }
+  .wifi { padding: 10px 14px; border: 1px solid #2a3442; border-radius: 6px; background: #0e1116; }
+  footer { max-width: 720px; margin-top: 18px; color: #6c7787; font-size: 12px; line-height: 1.5; }
+  code, b { color: #fff; }
+</style>
+</head>
+<body>
+  <h1>PS4 14.00 — GoldHEN 2.4b18.14</h1>
+  <p class="sub">Host Afterglow para ESP32-S2 (4 MB)</p>
+
+  <esp-web-install-button manifest="esp.json">
+    <button slot="activate">INICIAR</button>
+    <span slot="unsupported">Use Chrome ou Edge.</span>
+    <span slot="not-allowed">Abra esta página por HTTPS (GitHub Pages).</span>
+  </esp-web-install-button>
+
+  <p class="hint">Segure <b>BOOT</b>, plugue a ESP32 no USB e clique em <b>INICIAR</b>.</p>
+  <p class="wifi">Wi-Fi: <b>PS4-GOLDHEN</b> · Senha: <b>12345678</b> · Abra <b>http://10.1.1.1</b></p>
+
+  <footer>
+    Créditos: well0nez/m0zz (Afterglow), raw13g, jordyidk, SiSTRo/GoldHEN e
+    ps4macedo (formato do instalador). Uso por sua conta e risco; mantenha o
+    PS4 offline.
+  </footer>
+</body>
+</html>
